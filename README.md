@@ -3,7 +3,7 @@
 A clean, modern, and responsive **Smart City Dashboard** designed to visualize real-time data like traffic, pollution, energy usage, and water supply.  
 Perfect for showcasing frontend UI/UX skills — built using **HTML, CSS & JavaScript (Vanilla)** with no frameworks.
 
-![Smart City UI Preview](preview.png)
+🌐 [Live demo]https://piyush2707.github.io/smart-city-dashboard-ui/
 
 ## 🚀 Features
 
@@ -23,9 +23,6 @@ Perfect for showcasing frontend UI/UX skills — built using **HTML, CSS & JavaS
 
 ---
 
-## 📸 Preview
-
-![Smart City Dashboard Screenshot](preview.png)
 
 ---
 
