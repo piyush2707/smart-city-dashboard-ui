@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart City Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f5f8fd;
+      color: #333;
+    }
+
+    .dashboard {
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      background-color: #1a1a40;
+      color: #fff;
+      width: 240px;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 40px;
+      color: #00bfff;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      padding: 10px 0;
+      cursor: pointer;
+    }
+
+    .sidebar li.active {
+      color: #00bfff;
+      font-weight: bold;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    header {
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 32px;
+      color: #1a1a40;
+    }
+
+    header p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    header a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #1a1a40;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h2>🌆 SmartCity</h2>
+      <ul>
+        <li class="active">Overview</li>
+        <li>Traffic</li>
+        <li>Pollution</li>
+        <li>Energy</li>
+        <li>Water</li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>City Insights</h1>
+        <p>Designed by <strong>Piyush Joshi</strong> • 
+          <a href="https://www.instagram.com/withpiyushhz" target="_blank">@withpiyushhz</a> • 
+          <a href="https://www.linkedin.com/in/piyush2707" target="_blank">LinkedIn</a>
+        </p>
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <h3>Traffic</h3>
+          <p id="traffic">Loading...</p>
+        </div>
+        <div class="card">
+          <h3>Pollution</h3>
+          <p id="pollution">Loading...</p>
+        </div>
+        <div class="card">
+          <h3>Energy Usage</h3>
+          <p id="energy">Loading...</p>
+        </div>
+        <div class="card">
+          <h3>Water Supply</h3>
+          <p id="water">Loading...</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    // Dummy data simulation for smart city metrics
+    document.getElementById("traffic").textContent = "Moderate (45% congestion)";
+    document.getElementById("pollution").textContent = "PM2.5: 58 µg/m³ (Moderate)";
+    document.getElementById("energy").textContent = "68% capacity used";
+    document.getElementById("water").textContent = "82% storage available";
+  </script>
+</body>
+                     </html>
